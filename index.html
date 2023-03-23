@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Score input</title>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <p id="result"></p>
+        </div>
+      
+    <form>
+
+    <div class="label"> 
+        <p>Name:<b><input type="text" placeholder="name" id="name" class="input"></b></p>
+    </div>
+
+    <div class="label">
+        <p>Level:<b><input type="text" placeholder="level" id="level" class="input"></b></p>
+    </div>
+
+    <div class="label">   
+        <p>Score:<b><input type="text" placeholder="score" id="score" class="input"></b></p>
+    </div>
+
+    </form>
+    </div>
+
+    <div>
+      <p><b>This is the following enquiry</b></p>
+      <p> Name - Darthmouth</p>
+      <p>Level - 500l</p>
+      <p>Score - 69 </p>
+      <p><b>You scored B</b></p>
+    </div>
+
+    <script>
+        let name = "Darthmouth"
+        let level = "500l"
+        let score = "69"
+
+      if(score >= 70 && score <= 100){
+        return('You score A')
+      }else if(score >= 60 && score <= 69){
+        return('You score B')
+      }else if(score >= 50 && score <= 59){
+        return('You score C')
+      } else if(score >= 45 && score <= 49){
+        return('You score D')
+      }else if(score >= 40 && score <= 44){
+        return('You score E')
+      }else if(score >100 || score < 0){
+        return('Invalid score')
+    }  else{
+        return('You fail')
+       }
+
+function getScore(){
+ let name = document.getElementById('name').value
+ let level = document.getElementById('level').value
+ let score = document.getElementById('score').value
+   
+
+}
+    </script>
+</body>
+</html>

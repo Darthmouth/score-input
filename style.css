@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: inline-block;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: auto;
+    margin: 40px;
+}
+
+.label{
+    margin: 5px;
+}
+
+.input{
+    padding: 5px;
+}
